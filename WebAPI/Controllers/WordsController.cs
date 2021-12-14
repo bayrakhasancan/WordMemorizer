@@ -18,7 +18,7 @@ namespace WebAPI.Controllers
             _wordService = wordService;
         }
 
-        [HttpGet]
+        [HttpGet("getwords")]
         public IDataResult<List<Word>> GetWords()
         {
             return _wordService.GetAll();
